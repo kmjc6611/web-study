@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HW#1</title>
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
+    <style>
+        * {
+            font-family: 'Nanum Pen Script', cursive;
+        }
+
+        .wrap {
+            padding: 10px 40px 10px 40px;
+
+        }
+
+        .name {
+            font-size: 70px;
+            padding-right: 15px;
+        }
+
+        .cost {
+            font-size: 35px;
+        }
+
+        /*.photo{*/
+        /*    border: 1px solid black;*/
+        /*    border-width: ;*/
+        /*}*/
+
+
+        .order {
+            padding-top: 20px;
+        }
+
+        .photo, .button {
+            justify-content: center;
+            flex-direction: row;
+            display: flex;
+        }
+
+        .photo > img {
+            border: 1px solid black;
+            width: 600px;
+            height: 400px;
+        }
+
+        .item, .order {
+            width: 600px;
+            margin: auto;
+        }
+
+        .button > .btn {
+            background-color: cornflowerblue;
+            color: white;
+        }
+
+
+    </style>
+
+    <script>
+        function sayDone() {
+            alert('주문이 완료되었습니다.');
+        }
+    </script>
+</head>
+<body>
+<div class="wrap">
+    <div class="photo">
+        <img src="http://newsroom.etomato.com/userfiles/77(10).png">
+    </div>
+    <div class="item">
+        <span class="name">에어팟 프로</span>
+        <span class="cost">가격: 250,000원/개</span>
+        <p>이어폰 / 무선 / 코드리스 / 커널형 / 블루투스 / ver 5.0 / AAC / 액티브노이즈캔슬링 / 주변소음듣기 / H1칩셋 / 음악재생: 4.5시간 / 충전단자: 라이트닝 , 무선충전 /
+            오토페어링 / 재생/멈춤조절 / 터치버튼 / 핸즈프리통화 / 퀵충전 / 스마트센서 / 생활방수 / 무게:5.4g / 적응형EQ / Qi인증</p>
+    </div>
+    <div class="order">
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text" id="basic-addon1">주문자 이름</span>
+            </div>
+            <input type="text" class="form-control" aria-label="Username"
+                   aria-describedby="basic-addon1">
+        </div>
+
+
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <label class="input-group-text" for="inputGroupSelect01">수량</label>
+            </div>
+            <select class="custom-select" id="inputGroupSelect01">
+                <option selected>-- 수량을 선택하세요 --</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="3">4</option>
+                <option value="3">5</option>
+            </select>
+        </div>
+
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text" id="basic-addon2">주소</span>
+            </div>
+            <input type="text" class="form-control" aria-label="Username"
+                   aria-describedby="basic-addon2">
+        </div>
+
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text" id="basic-addon2">전화번호</span>
+            </div>
+            <input type="text" class="form-control" aria-label="Username"
+                   aria-describedby="basic-addon3">
+        </div>
+
+
+        <div class="button">
+            <button onclick="sayDone()" type="button" class="btn btn-primary">주문하기</button>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
